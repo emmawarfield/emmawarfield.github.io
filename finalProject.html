@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Web Server Comparison</title>
+
+</head>
+
+<body>
+  <h1>Choosing a Web Server for Optimum Site Performance</h1>
+  <p>Designers, developers, and DIYers alike want their websites to load fast with 100% server uptime. Often though, many choose to go with popular web hosts, such as: GoDaddy, HostGator, Square, etc. Testing has found that most major web hosting services are more marketing-focused than technology-focused. Poor web server performance frustrates users and costs site owners conversions due to poor page load speeds. It's a huge contributor to a page's Bounce Rate.<br>
+    <br>
+    Why do so many people choose them if they're so bad? They don't know any better. So today, I present to you the most common web servers and the pros and cons of each.</p>
+  <b>Top 5 Web Servers (by market share)</b><br>
+  <ul>
+  <li>Nginx - 34.0%</li>
+  <li>Apache - 29.0%</li>
+  <li>CloudFlare Server - 22.6%</li>
+  <li>Litespeed - 13.7%</li>
+  <li>Microsft-IIS - 4.5%</li></ul>
+  <br>
+  <i>Source: </i><a href="https://w3techs.com/technologies/overview/web_server" target="_blank">W3 Techs</a>
+  <br>
+  <main>
+    
+    <h2>Web Server Comparisons</h2>
+    
+    <article>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg" alt="Nginx logo" width=120>
+      <h3>Nginx</h3>
+      <p><b>Pros</b><br>
+      Nginx can handle large numbers of concurrent connections with low memory usage, making it ideal for high-traffic websites, such as e-commerce stores. It is efficient at serving static content, scales easily for growing websites, and features robust security features. Nginx, being widely adopted by server administrators, has a vast community around it for information sharing.<br>
+      <br>
+      <b>Cons</b><br>
+      This is where the party ends. Nginx has a steep learning curve intended for more experienced adminstrators, as opposed to Apache's beginner-friendly configuration style. It has limited dynamic content support, e.g. PHP and Python implementation. Technical considerations abound, which again, makes it more suitable for more experienced administrators.</p>
+      </article>
+    
+    <article>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_HTTP_server_logo_%282019-present%29.svg" alt="Apache logo" width=120>
+      <h3>Apache</h3>
+      <p><b>Pros</b><br>
+      Apache has been around for some time and its user community shows. You'll likely find an answer to all your burning technical questions. The server is very flexible and extensible allowing for a high degree of customization. Whether you're running Linux, Windows, or MacOS as your computer's operating system, Apache is compatible with all three.<br>
+      <br>
+      <b>Cons</b><br>
+      And now the reason why most major web hosting services suck! They use Apache - and dated hardware. All joking aside, performance is a huge reason many administrators are moving away from this dated web server. High memory and CPU usage become problematic when there are several concurrent sessions, making Apache a bad choice for e-commerce, especially when the web hosting service using outdated hardware. A lack of modern features and, at times, difficult configuration make it a choice you may want to skip, except in specific use-cases. </p>
+    </article>
+    
+    <article>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="CloudFlare logo" width=120>
+      <h3>CloudFlare Server</h3>
+      <p><b>Pros</b><br>
+      Through the use of its network of global data centers, CloudFlare improves websites' performance through the use of content caching. By spreading data across servers, website performance is improved, even when serving users in different countries. An array of modern features and easy setup makes CloudFlare an ideal choice for administrators wanting to migrate sites to cloud hosting.<br>
+        <br>
+      <I><b>NOTE: </b>Before you go on, there are several resources across the Web for learning about the different hosting options: shared, VPS, and cloud. Cloud hosting, according to Scala, is rapidly becoming the future of web hosting for its performance, setup, and security enhancements. What's more, it's even cheaper than traditional hosting methods. <br></i>
+      <br>
+      <b>Cons</b><br>
+      It sounded too good to be true, right? CloudFlare's firewall is so good, as it turns out, that it has the potential to block too much. Then there's the whole network issue. If CloudFlare's network has issues, so will your website. Because CloudFlare owns the network that the sites are hosted on, privacy concerns are another issue. ALL incoming and outgoing traffic runs through CloudFlare's network, putting sensitive data at risk. To finish this out, while server settings can always cause problems, cloud hosting such as CloudFlare's can cause things (i.e. SEO, caching, end-to-end encryption) to not function properly and may even harm a website in various ways.</p>
+    </article>
+    
+    <article>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/LiteSpeed_Logo.svg" alt="Litespeed logo" width=120>
+      <h3>Litespeed</h3>
+      <p><b>Pros</b><br>
+      Litespeed is quickly becoming the web server of choice for websites needing high bandwidth. High-traffic loads and concurrent connections are easily handled as resource usage is minimal. It is also compatible with many Apache files, making upgrades easier. Modern features, functional advances, and efficient programming make Litespeed an excellent choice for many administrators.<br>
+      <br>
+      <b>Cons</b><br>
+      The Enterprise version is costly, but thankfully there is OpenLiteSpeed; a free, open-source version that lacks some Enterprise features. Limited support and free features may be a deterrent for less-experienced administrators and those tied to a smaller budget. Ease of use and compatibility are other concerns that should be considered on a case-by-case basis. </p>
+    </article>
+    
+    <article>
+       <img src="https://logowik.com/content/uploads/images/microsoft-iis2928.jpg" alt="Microsft-IIS logo" width=120>
+      <h3>Microsoft-IIS</h3>
+      <p><b>Pros</b><br>
+      Microsoft-IIS, as you might imagine, integrates seamlessly with Windows and the .NET framework. It also features robust support. As with most Microsoft products, patching and updates are handled automatically and are often timely when threats emerge. <br>
+      <br>
+      <b>Cons</b><br>
+      To fully utilize Microsoft-IIS, it must be part of a larger Microsft-based, computing environment. While it can host non-Microsoft technologies, functionality becomes problematic. Limited built-in caching, performance issues during periods of high traffic, and slow adoption of new standards put Microsoft-IIS in a use case of its own.</p>
+    </article>
+    <br>
+    <h2>Summary</h2>
+    <p>In conclusion, there are many factors to consider beyond pricing when choosing a hosting service for your site(s). Each web server has its strengths and weaknesses, and use cases vary widely. Always consider future-proofing tech-related projects as changes later can be time-consuming, expensive, and cause a myriad of issues. For the average website owner, the cloud-based hosts offer many advantages over traditional hosting and pricing is almost equal. There's really no reason to settle for bad hosting services anymore.</p>
+    <br>
+    <br>
+    <br>
+    &copy; EW, 2024
+  </main>
+
+
+</body>
+
+</html>
